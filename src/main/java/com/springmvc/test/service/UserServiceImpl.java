@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService{
         return users;
     }
      
-   /* public User findById(long id) {
+    public User findById(long id) {
         for(User user : users){
             if(user.getId() == id){
                 return user;
@@ -71,7 +71,7 @@ public class UserServiceImpl implements UserService{
     public void deleteAllUsers(){
         users.clear();
     }
- */
+ 
     private static List<User> populateDummyUsers(){
         List<User> users = new ArrayList<User>();
         users.add(new User(counter.incrementAndGet(),"Sam", "NY", "sam@abc.com"));
